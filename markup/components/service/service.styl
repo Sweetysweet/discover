@@ -1,0 +1,133 @@
+mixinservice()
+.service
+  background #efeeee
+  margin-top 10rem
+  @media $mobile
+    width 132rem
+    height 55rem
+  @media $tablet
+    width 133rem  
+
+  #slider
+    width 60rem
+    height 55rem
+    overflow hidden 
+
+    #slider__line
+      width 1200rem
+      position relative
+      left 0 
+      transition all ease 2s
+      :after
+        content " "
+        display block
+        clear both
+
+    img 
+      float left 
+      width 60.2rem
+      height 70rem 
+      top 0 
+
+  h2.title
+    text-align center
+    text-transform uppercase
+    color $lime
+    font-size 2.8rem
+    margin-top -49.9rem
+    margin-left 44rem
+    font-family 'Modak', cursive
+    &:after 
+      border none
+      display flex
+      border-bottom 2px solid #c2c2c2
+      content ' '
+      width 15.5rem
+      margin-left 37rem
+      margin-top 1.3rem 
+    @media $mobile 
+      font-size 2.8rem
+      text-indent 3rem
+      
+    @media $tablet 
+      font-size 3rem
+
+  .line
+    border none 
+    display flex  
+    border-bottom 4px solid #59c45a
+    content ' '
+    width 6rem
+    margin -0.3rem 0rem 0rem 85.7rem
+    position absolute 
+
+  .text__show__wrapper
+    display flex
+    padding-bottom 8.2rem
+    @media $mobile
+      width 20rem
+    .wrapper__first
+      margin-right 6.1rem
+      .content
+        width 37rem
+        margin-top 5rem
+        margin-left 61.2rem
+        text-align justify
+        line-height 2rem 
+        color #959595
+        &:nth-child(1)
+          @media $mobile
+            font-size 1.8rem 
+        &:nth-child(2)
+          @media $mobile
+            font-size 1.8rem
+            margin-top 7rem    
+        .content_img
+          object-fit cover
+          width 10%
+          height 100%
+          display flex 
+          margin -4.1rem 0 2rem 16.4rem
+          text-align center
+          @media $mobile
+            font-size -2rem
+           
+        .content_leftDown_img  
+          object-fit cover
+          width 10%
+          height 100%
+          display flex 
+          margin -5.1rem 0 2rem 16.4rem
+          text-align center
+          @media $mobile
+            font-size -2rem 
+    .wrapper__second
+      .content
+        width 26rem
+        
+        margin-top 8rem
+        text-align justify
+        line-height 2rem 
+        color #959595
+        @media $mobile
+          font-size 1.8rem
+        .content_img
+          object-fit cover
+          width 13%
+          height 100%
+          display flex 
+          margin -6.1rem 0 1rem 12.4rem
+          text-align center 
+        .content_RightDown_img
+          object-fit cover
+          width 15%
+          height 100%
+          display flex 
+          margin -7.1rem 0 3rem 12.4rem
+          text-align center
+          
+          
+
+
+    
+mixinservice()

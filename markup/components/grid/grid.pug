@@ -1,0 +1,34 @@
+mixin grid(data= {})
+    - 
+      const{
+        title = 'tours',
+        img = '%=static=%/img/content/',
+        buttonText = 'see more'
+      } = data;
+
+    section.grid
+      h2.title= title
+      .line
+
+      .grid__wrapper
+        .row_grid
+          img(src=`${img}grid1.jpg` alt="")
+          img(src=`${img}grid2.jpg` alt="")
+          img(src=`${img}grid3.jpg` alt="")
+          img(src=`${img}grid4.jpg` alt="")
+          
+        .row_grid
+          img(src=`${img}grid5.jpg` alt="")
+          img(src=`${img}grid6.jpg` alt="")
+          img(src=`${img}grid7.jpg` alt="")
+          img(src=`${img}grid8.jpg` alt="")
+        .row_grid
+          img(src=`${img}grid9.jpg` alt="")
+          img(src=`${img}grid10.jpg` alt="")
+          img(src=`${img}grid11.jpg` alt="")
+          img(src=`${img}grid12.jpg` alt="")
+      .button__container
+      a(href='index.html') 
+        button(
+          type="submit"
+        )= buttonText

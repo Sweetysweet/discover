@@ -1,0 +1,37 @@
+mixin header(data = {})
+  -
+    // Globals: SITE_TITLE, DEFS, MENU, MENU_PROFILE
+
+
+
+  header.header
+    nav
+      .logo
+        p discover 
+        span travel
+      //- - var list = ["Uno", "Dos", "Tres"]
+      //-   each item in list
+      //-     li= item
+       - var list = ["home", "tour", "culinary", "contact"]
+      //- .menu
+      //-   ul
+      //-     each item in list
+      //-       li= item
+    
+      
+      - var list = ["home", "tour", "hotel", "culinary", "contact"]
+      .menu-wrap
+        ul.nav-links
+          each item in list
+            li
+              a(href="#")= item
+      .menu-toggle
+        .hamburger
+          span
+          span
+          span
+        .cross
+          span
+          span
+
+          

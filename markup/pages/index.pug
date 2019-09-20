@@ -1,0 +1,26 @@
+//- pageTitle: Главная
+//- pageCategory: Страницы
+//- date: 12.12.2018
+//- status: wait
+
+extends ../layouts/layout.pug
+include ../components/hero/hero.pug
+include ../components/description/description.pug
+include ../components/service/service.pug
+include ../components/grid/grid.pug
+include ../components/footer/footer.pug
+
+append vars
+  -
+    setDefs({
+      pageTitle: 'Главная',
+      menuActiveIndex: 0
+    })
+
+block content
+  +hero()
+  +description("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.",
+               "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit.")
+  +service("sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+           "sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non Sed ut.")
+  +grid()            

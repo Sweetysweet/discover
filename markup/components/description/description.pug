@@ -1,0 +1,46 @@
+mixin description(caption, content, data={})
+    -
+      const{
+        title = 'favorable',
+        img='%=static=%/img/content/',
+        min='(min-width: 768px)',
+        max='(max-width: 767px)'
+      } = data;
+    section.description
+      h2.title= title
+      .line
+
+      .image__show__wrapper
+        .wrapper__first
+          picture.image__first
+            source(srcset=`${img}first.jpg` alt="", media= min)
+            source(srcset=`${img}first-mob-2.jpg` alt="", media= max)
+            img(src=`${img}first-mob-2.jpg`, alt="")
+          .content
+            h4.image-caption= caption
+            span.image-content= content
+          picture.image__second
+            source(srcset=`${img}third.jpg` alt="", media= min)
+            source(srcset=`${img}third-mob.jpg` alt="", media= max)
+            img(src=`${img}third-mob.jpg`, alt="")
+          .content
+            h4.image-caption= caption
+            span.image-content= content
+        .wrapper__third
+          picture.image__third
+            source(srcset=`${img}second.jpg` alt="", media= min)
+            source(srcset=`${img}second-mob.jpg` alt="", media= max)
+            img(src=`${img}second-mob.jpg`, alt="")
+          .content  
+            h4.image-caption= caption
+            span.image-content= content
+          picture.image__fourth
+            source(srcset=`${img}fourth.jpg` alt="", media= min)
+            source(srcset=`${img}fourth-mob.jpg` alt="", media= max)
+            img(src=`${img}fourth-mob.jpg`, alt="")
+          .content  
+            h4.image-caption= caption
+            span.image-content= content
+
+
+        

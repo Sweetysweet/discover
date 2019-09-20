@@ -1,0 +1,81 @@
+mixindescription()
+
+.description
+  
+
+  h2.title 
+    text-align center
+    text-transform uppercase
+    color $lime
+    font-size 2.8rem
+    margin-top 10rem
+    font-family 'Modak', cursive
+
+    
+    &:after 
+      border none
+      display flex
+      border-bottom 2px solid #c2c2c2
+      content ' '
+      width 22rem
+      margin-left 55rem
+      margin-top 1.6rem 
+      position relative
+
+    @media $mobile 
+      font-size 2.8rem
+      text-indent 58rem
+      
+    @media $tablet 
+      font-size 6rem
+      text-indent 53rem
+      
+  .line
+    border none 
+    display flex  
+    border-bottom 4px solid $lime
+    content ' '
+    width 7rem
+    margin -0.3rem 62.6rem
+    position absolute
+  .image__show__wrapper
+    display flex
+    margin 5rem 1rem 
+    .image__second,
+    .image__fourth
+      @media $desktop
+        img 
+          padding-top 5rem  
+    [class*='image__']
+      @media $mobile
+        margin-left 19rem
+        padding-top 4rem
+    .image__first
+      @media $mobile
+        padding-right 20rem        
+    .content
+      width 36rem
+      margin -23rem 0rem 0rem 30rem
+      padding 2rem
+      text-align justify
+      line-height 2rem
+      @media $mobile
+        display block
+        margin-top -27rem
+        margin-left 58rem
+      h4
+        margin-bottom 1.5rem
+    @media $mobile
+      display block
+      font-size 2rem 
+
+   
+  // .col_1
+  //   .col_1__header
+  //     h4.header
+  //       text-align center
+  //       margin-left 20rem  
+      
+
+
+mixindescription()

@@ -1,0 +1,41 @@
+mixin service(TextContent, SecondTextContent, data={})
+    - 
+      const{
+        title = 'service',
+        img = '%=static=%/img/content/slider1.jpg',
+        service = '%=static=%/img/assets/service/'
+      } = data;
+    section.service
+      #slider
+        #slider__line
+          img(src= img, alt="")
+          img(src= img, alt="")
+          img(src= img, alt="")
+          img(src= img, alt="")
+          img(src= img, alt="")
+      .service__description
+        h2.title= title
+        .line
+
+      .text__show__wrapper
+        .wrapper__first
+          .content
+            .content_img
+              img(src=`${service}service-1.svg`, alt="")
+            span.text-content= TextContent
+          .content
+            .content_leftDown_img
+              img(src=`${service}service-3.svg`, alt="")
+            span.text-content= TextContent
+        .wrapper__second
+          .content
+            .content_img
+              img(src=`${service}service-2.svg`, alt="")
+            span.text-content= SecondTextContent
+          .content
+            .content_RightDown_img
+              img(src=`${service}service-4.svg`, alt="")
+            span.text-content.right= SecondTextContent
+            
+        
+      

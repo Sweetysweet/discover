@@ -1,0 +1,64 @@
+mixin footer(data= {})
+    - 
+      const {
+        popUptitle = 'форма отправлена',
+        popUpText = 'Мы свяжемся с вами в ближайшее время',
+        title = 'Contact',
+        img = '%=static=%img/assets/footer/' 
+      } = data;
+    footer.footer
+        .footer__container          
+          h2.tittle= title
+          form.contact__left_side
+              .logo__left_side
+                a(href="index.html")
+                 p.logo Discover
+                 span.logo_travel travel
+                .text__left_side
+                  span.description_text 
+                    span(class="first_line") Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    <span class="second_line"> Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</span>
+                    <span class="third_line"> velit, sed quia non Sed ut perspiciatis unde omnis iste natus error sit voluptatem accu&shy;</span>
+                    <span class="fourth_line"> santium doloremque laudantium.</span>
+                .contact__address
+                  .img_icon
+                    img(src=`${img}ic-map.svg`)
+                    img(src=`${img}ic-phone.svg`)
+                    img(src=`${img}mail.svg`)
+                    img(src=`${img}ic-web.svg`)
+                  p.address So 188 Nguyen Xien, Thanh, Xuan, Ha, Noi
+                  p.address +84 985 234 812
+                  p.address Huuluong.arc@gmail.com        
+                  p.address Kientructrinhgia.vn
+                  .social__icons
+                    img(src=`${img}fb.svg`, alt="").social
+                    img(src=`${img}g+.svg`, alt="").social
+                    img(src=`${img}ln.svg`, alt="").social      
+          form.contact__rightSide
+              .form-group
+                  input.form__input(
+                        type="text" 
+                        placeholder=" " required)
+                  label.form__label Your name
+              .form-group
+                  input.form__input(
+                        type="email" 
+                        placeholder=" " required)
+                  label.form__label Email
+              .form-group
+                  input.form__input#password(
+                        class="form__input"
+                        type="text"
+                        maxlength="40" 
+                        placeholder=" " required)
+                  label.form__label Message
+              button(
+                    type="submit"
+                  ) send 
+                img(src=`${img}mess.svg`, alt="")
+          .popup-wrap
+                .mask-call
+                .form-call.form-call_thanks
+                  .form-call__title.form-call__title_thanks= popUptitle
+                  .form-call__text.form-call__text_thanks= popUpText
+                

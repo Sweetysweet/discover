@@ -1,0 +1,76 @@
+mixinhero()
+
+.hero
+  background url('../img/assets/hero/background-1.jpg') fixed no-repeat center/cover
+  height 91.2rem
+  
+  @media $mobile {
+    height 100rem
+    width 132rem
+  }
+  @media $tablet {
+    height 100rem
+    width 133rem
+  }
+
+  h1.tittle
+    color $white
+    padding-top 32.3rem
+    font-size 6.8rem
+    margin-left 46rem
+    text-transform uppercase
+    font-weight 900
+    font-style normal
+    font-family 'Modak', cursive
+
+    @media $mobile {
+      margin-left 30rem
+      font-size 10rem
+    }
+
+    @media $tablet {
+      font-size 9rem
+      margin-left 35rem
+    }
+    
+  p 
+    color #fff
+    text-align center
+    padding-top 3rem
+
+    @media $mobile {
+      font-size 5rem
+      margin-left 2rem  
+      margin-right 2rem  
+    }
+
+    @media $tablet {
+      font-size 3rem
+      margin-left 9rem
+      margin-right 9rem
+    }
+
+  .button__container
+    display flex
+    justify-content: center
+    padding-top 7.2rem
+    padding-bottom 19.3rem
+      
+  button
+    text-align center
+    text-transform uppercase
+    color #fff
+    font-size 2.6rem  
+    background-color $lime
+    border-radius 1rem
+    width 28.5rem
+    height 7rem
+    margin 0 auto 
+    line-height: 4rem
+    font-style: normal
+    &:hover
+      box-shadow 0 0 10px rgba(4,4,3,0.9) 
+      transition all .25s ease-in-out
+    @media $mobile
+      font-size 3rem
+mixinhero()
