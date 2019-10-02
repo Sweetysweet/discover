@@ -4,14 +4,17 @@ mixinhero()
   background url('../img/assets/hero/background-1.jpg') fixed no-repeat center/cover
   height 91.2rem
   
-  @media $mobile {
+  @media $mobile 
     height 100rem
     width 132rem
-  }
-  @media $tablet {
+
+  @media $tablet 
     height 100rem
     width 133rem
-  }
+  
+  @media $desktop 
+    width 149.5rem
+  
 
   h1.tittle
     color $white
@@ -23,54 +26,65 @@ mixinhero()
     font-style normal
     font-family 'Modak', cursive
 
-    @media $mobile {
+    @media $mobile 
       margin-left 30rem
       font-size 10rem
-    }
+    
 
-    @media $tablet {
+    @media $tablet 
       font-size 9rem
-      margin-left 35rem
-    }
+      margin-left 41rem
+    
     
   p 
     color #fff
     text-align center
     padding-top 3rem
+    font-size 2rem
+    margin-left -10rem
 
-    @media $mobile {
+    @media $mobile 
       font-size 5rem
       margin-left 2rem  
       margin-right 2rem  
-    }
+    
 
-    @media $tablet {
-      font-size 3rem
-      margin-left 9rem
+    @media $tablet 
+      font-size 2.5rem
+      margin-left 15rem
       margin-right 9rem
-    }
+    
 
   .button__container
     display flex
     justify-content: center
     padding-top 7.2rem
     padding-bottom 19.3rem
+    margin-left -10rem
+    @media $desktop 
+      margin-left -5rem
+    @media $tablet 
+      margin-left 10rem 
       
-  button
-    text-align center
-    text-transform uppercase
-    color #fff
-    font-size 2.6rem  
-    background-color $lime
-    border-radius 1rem
-    width 28.5rem
-    height 7rem
-    margin 0 auto 
-    line-height: 4rem
-    font-style: normal
-    &:hover
-      box-shadow 0 0 10px rgba(4,4,3,0.9) 
-      transition all .25s ease-in-out
-    @media $mobile
-      font-size 3rem
+      
+    button
+      text-align center
+      text-transform uppercase
+      color #fff
+      font-size 2.6rem  
+      background-color $lime
+      border-radius 1rem
+      width 28.5rem
+      height 7rem
+      margin-left -7rem
+      line-height: 4rem
+      font-style: normal
+      cursor pointer
+      &:hover
+        box-shadow 0 0 10px rgba(4,4,3,0.9) 
+        transition all .25s ease-in-out
+      @media $mobile
+        font-size 3rem
+        margin-left 9rem
+     
 mixinhero()

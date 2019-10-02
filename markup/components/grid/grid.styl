@@ -41,13 +41,19 @@ mixindescription()
           margin-left 61.5rem  
     .grid__wrapper
       margin-top 5rem
-      margin-left 6rem 
+      margin-left 6rem
+      @media $mobile
+        width 100%
+        margin-left 20rem
+      
       [class*='row_grid']
         display flex
         padding 1rem 2rem
         @media $desktop
-          margin-left -1rem
+          display flex
+          margin-left -3rem
         @media $mobile-tablet
+          display flex
           margin-left 4rem
         @media $mobile
           margin-left 10rem    

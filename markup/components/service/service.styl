@@ -7,6 +7,8 @@ mixinservice()
     height 55rem
   @media $tablet
     width 133rem  
+  @media $desktop
+    width 150rem  
 
   #slider
     width 60rem
@@ -45,12 +47,15 @@ mixinservice()
       width 15.5rem
       margin-left 37rem
       margin-top 1.3rem 
+      @media $desktop
+        margin-left 45rem
     @media $mobile 
       font-size 2.8rem
       text-indent 3rem
       
     @media $tablet 
-      font-size 3rem
+      font-size 3rem 
+
 
   .line
     border none 
@@ -60,6 +65,8 @@ mixinservice()
     width 6rem
     margin -0.3rem 0rem 0rem 85.7rem
     position absolute 
+    @media $desktop
+      margin-left 94rem
 
   .text__show__wrapper
     display flex
@@ -81,7 +88,9 @@ mixinservice()
         &:nth-child(2)
           @media $mobile
             font-size 1.8rem
-            margin-top 7rem    
+            margin-top 7rem
+        @media $desktop
+          margin-left 65rem        
         .content_img
           object-fit cover
           width 10%
@@ -104,7 +113,8 @@ mixinservice()
     .wrapper__second
       .content
         width 26rem
-        
+        @media $desktop
+          margin-left -3rem
         margin-top 8rem
         text-align justify
         line-height 2rem 

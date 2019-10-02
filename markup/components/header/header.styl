@@ -1,9 +1,12 @@
 mixinHeader()
-  .header 
+  header.header
+    box-sizing border-box
     
   nav
     margin-bottom 4rem
     position relative
+    @media $mobile
+      height 13rem
     .logo
       display inline
       position relative
@@ -27,6 +30,7 @@ mixinHeader()
           font-size 9rem
           width 49rem
           margin-left 40rem
+
       span 
         color $lime
         text-align center
@@ -38,15 +42,17 @@ mixinHeader()
         background-color $white
         @media $mobile
           font-size 3rem
-          margin-left 55rem
-          margin-top -2rem    
+          margin-left 58rem
+          margin-top -2rem 
+        @media $desktop
+          margin-left 41rem     
     .menu-wrap
       display flex
       justify-content space-around
       align-items center
       @media $mobile
         visibility hidden
-        opacity 0
+        opacity 0 
       &.open
         @media $mobile
           transition all 0.4s linear
@@ -84,9 +90,17 @@ mixinHeader()
         display flex
         justify-content space-around
         width 40%
+        @media $tablet 
+          display flex
+          justify-content space-around
+          margin-left 80rem
         li
           list-style none
-          text-transform uppercase 
+          text-transform uppercase
+          @media $tablet
+            display flex
+            margin-left 2rem
+    
           a
             font-size 1.6rem
             &:hover

@@ -18,7 +18,7 @@ mixindescription()
       border-bottom 2px solid #c2c2c2
       content ' '
       width 22rem
-      margin-left 55rem
+      margin-left 57rem
       margin-top 1.6rem 
       position relative
 
@@ -27,8 +27,10 @@ mixindescription()
       text-indent 58rem
       
     @media $tablet 
-      font-size 6rem
+      font-size 3rem
       text-indent 53rem
+    @media $desktop
+      text-indent 4rem   
       
   .line
     border none 
@@ -36,45 +38,47 @@ mixindescription()
     border-bottom 4px solid $lime
     content ' '
     width 7rem
-    margin -0.3rem 62.6rem
+    margin -0.3rem 64.6rem
     position absolute
   .image__show__wrapper
     display flex
-    margin 5rem 1rem 
+    margin 5rem 7rem
+    @media $tablet
+      margin-left 14rem
+    @media $desktop
+      margin-left 2rem 
     .image__second,
     .image__fourth
-      @media $desktop
         img 
           padding-top 5rem  
     [class*='image__']
       @media $mobile
-        margin-left 19rem
-        padding-top 4rem
-    .image__first
-      @media $mobile
-        padding-right 20rem        
+        margin-left 23rem        
     .content
-      width 36rem
-      margin -23rem 0rem 0rem 30rem
+      width 30rem
+      margin -3rem 0rem 0rem 1rem
       padding 2rem
       text-align justify
       line-height 2rem
       @media $mobile
         display block
-        margin-top -27rem
+        margin-top -18rem
         margin-left 58rem
+      @media $desktop 
+        margin-left 35rem
+        margin-top -20rem 
+      @media $tablet
+        margin-top -21rem
+        margin-left 27rem     
       h4
         margin-bottom 1.5rem
+        @media $desktop
+          margin-top -4rem
+        @media $tablet 
+          margin-top -3rem  
     @media $mobile
       display block
       font-size 2rem 
-
-   
-  // .col_1
-  //   .col_1__header
-  //     h4.header
-  //       text-align center
-  //       margin-left 20rem  
       
 
 
